@@ -1,0 +1,24 @@
+\section{Introduction}
+
+\begin{frame}{Context \& Project Objective}
+    \textbf{The Data-Driven Era in Sports:}
+    \begin{itemize}
+        \item Analyzing a multidimensional dataset of shots taken by \textbf{Kobe Bryant} during his 20-year career to optimize strategy via \textit{sports analytics}.
+    \end{itemize}
+    \vspace{0.3cm}
+    \textbf{Project Objective (Binary Classification):}
+    \begin{itemize}
+        \item \textbf{Target Variable:} \texttt{shot\_made\_flag} ($Y \in \{0, 1\}$)
+        \item \textbf{1:} Successful shot (Made) | \textbf{0:} Missed shot (Failure)
+        \item \textbf{Goal:} Train Machine Learning algorithms to calculate the probability of a successful shot based on an input feature vector.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Dataset Description}
+    Variables grouped into three main categories:
+    \begin{itemize}
+        \item \textbf{Spatial and Geometric:} Cartesian coordinates ($X, Y$) of the release point and distance from the basket.
+        \item \textbf{Temporal and Contextual:} Time remaining, game period, season, opponent and home court advantage.
+        \item \textbf{Biomechanical and Technical:} Specific offensive action performed (e.g., \textit{Jump Shot, Layup}) and shot combination type.
+    \end{itemize}
+\end{frame}

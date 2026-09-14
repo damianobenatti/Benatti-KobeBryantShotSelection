@@ -1,0 +1,24 @@
+\section{Conclusions and Future Work}
+
+\begin{frame}{Project Summary \& Limitations}
+    \textbf{Objective Achieved:}
+    \begin{itemize}
+        \item Robust ML pipeline (Target Enc., isolation) validating domain-specific feature engineering.
+        \item Champion Model (RF) achieved \textbf{67.32\% Accuracy} on unseen data.
+    \end{itemize}
+    \vspace{0.3cm}
+    \textbf{Domain Limitations:}
+    \begin{itemize}
+        \item Drop in recall for successful shots and higher errors in mid-range.
+        \item \textbf{Root Cause:} Absence of advanced situational metrics (the surrounding defensive environment).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Future Work}
+    To overcome limitations and improve accuracy:
+    \begin{itemize}
+        \item \textbf{Integration of Tracking Data:} Incorporate optical tracking (defender distance) to quantify defensive pressure.
+        \item \textbf{Sequential Modeling:} Implement RNNs to capture rhythm, fatigue, and the "hot-hand fallacy".
+        \item \textbf{Deep Learning:} Train DNNs on expanded feature sets for complex non-linear biometric interactions.
+    \end{itemize}
+\end{frame}
