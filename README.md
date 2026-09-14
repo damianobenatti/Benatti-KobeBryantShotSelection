@@ -6,7 +6,8 @@ This repository contains the project based on the Kaggle competition [Kobe Bryan
 The objective is to develop a machine learning model in Python to estimate the probability of Kobe Bryant making a shot by analyzing the spatial, temporal, and contextual characteristics of his throws over the course of his 20-year career.
 
 ## Repository Structure
-* `/software`: Contains the Jupyter Notebook with data analysis, feature engineering, and model development, as well as the technical instructions to run the code.
+* `/software`: Contains the Jupyter Notebook with data analysis, feature engineering, and model development, as well as the technical instructions to run the code and the `data.csv`.
+* `/doc`: Contains the project presentation created with LaTeX Beamer, including the `.tex` source code, complementary assets, and the final compiled PDF.
 
 ## Results & Performance
 During the model evaluation phase, two main algorithms were tested and compared: **XGBoost** and **Random Forest**. The performance difference between the two models on the Validation set was extremely tight (less than 1%). However, the **Random Forest Classifier** slightly outperformed XGBoost and was therefore selected as the final model for this project. 
