@@ -3,14 +3,14 @@
 \begin{frame}{Model Selection \& Metrics}
     \textbf{Validation Baseline Comparison:}
     \begin{itemize}
-        \item \textbf{Random Forest:} Accuracy 0.6843 | ROC AUC 0.7023
-        \item \textbf{XGBoost:} Accuracy 0.6817 | ROC AUC 0.7033
+        \item \textbf{Random Forest:} Accuracy 0.6752 | ROC AUC 0.6968
+        \item \textbf{XGBoost:} Accuracy 0.6750 | ROC AUC 0.6970
         \item \textbf{Champion Model: Random Forest} (Chosen for interpretability).
     \end{itemize}
     \vspace{0.3cm}
     \textbf{Final Test Performance ($N=3855$):}
     \begin{itemize}
-        \item \textbf{Accuracy:} 67.32\%  | \textbf{ROC AUC:} 0.6998
+        \item \textbf{Accuracy:} 67.44\%  | \textbf{ROC AUC:} 0.6989
         \item Metrics align with validation results, confirming \textbf{no overfitting}.
     \end{itemize}
 \end{frame}
@@ -20,8 +20,8 @@
         \begin{column}{0.4\textwidth}
             \textbf{Recall Asymmetry:}
             \begin{itemize}
-                \item \textbf{Missed (0):} High Recall (85\%). Model confident in misses.
-                \item \textbf{Made (1):} Conservative behavior. High Precision (71\%) but low Recall (46\%).
+                \item \textbf{Missed (0):} High Recall (77\%). Model confident in misses.
+                \item \textbf{Made (1):} Conservative behavior. Low Recall (54\%).
             \end{itemize}
         \end{column}
         \begin{column}{0.6\textwidth}
@@ -36,7 +36,7 @@
 \begin{frame}{Qualitative Error Diagnostics}
     \textbf{Spatial Analysis of Errors:}
     \begin{itemize}
-        \item Avg distance (Incorrect): 14.18 ft. | Avg distance (Correct): 13.19 ft.
+        \item Avg distance (Incorrect): 14.89 ft. | Avg distance (Correct): 15.16 ft.
     \end{itemize}
     \vspace{0.3cm}
     \textbf{The Mid-Range Problem:}
